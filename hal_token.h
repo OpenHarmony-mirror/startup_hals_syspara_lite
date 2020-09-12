@@ -25,7 +25,7 @@ extern "C" {
 #endif
 
 /**
- * @brief Read token value form device.
+ * @brief Read token value from device.
  *
  * @param token The token value, len The token len.
  * @returns 0 if it succeeds and get the update area token,
@@ -43,7 +43,7 @@ int HalReadToken(char *token, unsigned int len);
 int HalWriteToken(const char *token, unsigned int len);
 
 /**
- * @brief Get AcKey value form device.
+ * @brief Get AcKey value from device.
  *
  * @param acKey The acKey value, len The acKey len.
  * @returns 0 if it succeeds, -1 if it fails.
@@ -51,7 +51,7 @@ int HalWriteToken(const char *token, unsigned int len);
 int HalGetAcKey(char *acKey, unsigned int len);
 
 /**
- * @brief Get ProdId value form device.
+ * @brief Get ProdId value from device.
  *
  * @param productId[] The productId value, len The productId len.
  * @returns 0 if it succeeds, -1 if it fails.
